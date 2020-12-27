@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip(){
         /*Remember that you can access the UI element using the binding object, and that you can reference the UI element based on its resource ID name in camel case.*/
-        val stringInTextField = binding.costOfService.text.toString()
+        val stringInTextField = binding.costOfServiceEditText.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
 
         if(cost == null){
